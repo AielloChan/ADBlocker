@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ADBlocker
 // @namespace    http://aiellochan.com/
-// @version      1.2
+// @version      1.3
 // @description  An ADBlocker for front-end engineer!
 // @author       Aiello Chan <Aiello.Chan@Gmail.com>
 // @match        *://*/*
@@ -28,6 +28,19 @@ var Rules = {
       '.r300.clearfix.mt10.mb10',
       '.rFixedBox',
       '#wrapper'
+    ]
+  }],
+  "tool.chinaz.com": [{
+    test: /\/tools\//,
+    selectors: [
+      '.fr.topTsRight.ml10',
+      '.fr.topTsCenter',
+      '.wrapper02.ptb10.ToolsWrapIM.clearfix',
+      '.Mnav-right02.fr',
+      '.wrapper.mt10>#centerTxt',
+      '#centerImg',
+      '#toolsIntro',
+      '.wrapper.mt10'
     ]
   }]
 };
