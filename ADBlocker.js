@@ -14,7 +14,11 @@ var Rules = {
     test: /\/[^/]+?\/article\//,
     selectors: [
       '.extension_other.csdn-tracking-statistics.tracking-click',
-      '.fixRight_box'
+      '.fixRight_box',
+      'body>.csdn-tracking-statistics',
+      '#side>.csdn-tracking-statistics',
+      '.panel.csdn-tracking-statistics',
+      '.main iframe'
     ]
   }],
   "www.jb51.net": [{
