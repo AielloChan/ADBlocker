@@ -40,7 +40,8 @@ var Rules = {
       '.wrapper.mt10>#centerTxt',
       '#centerImg',
       '#toolsIntro',
-      '.wrapper.mt10'
+      '.wrapper.mt10',
+      '#container.container'
     ]
   }]
 };
