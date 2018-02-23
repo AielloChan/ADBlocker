@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ADBlocker
 // @namespace    http://aiellochan.com/
-// @version      1.0
+// @version      1.2
 // @description  An ADBlocker for front-end engineer!
 // @author       Aiello Chan <Aiello.Chan@Gmail.com>
 // @match        *://*/*
