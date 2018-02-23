@@ -62,4 +62,4 @@ var Rules = {
 })();
 
 function addStyle(b){var a=document.createElement("style"),c=document;c.getElementsByTagName("head")[0].appendChild(a);if(a.styleSheet){a.styleSheet.cssText=b;}else{a.appendChild(c.createTextNode(b));}}
-function Hide(a){addStyle(a.join(',')+'{display:none !important;}');}
+function Hide(a){addStyle(a.join(',')+'{display:none !important;visibility: hidden !important;width:0 !important;height:0 !important;z-index:-999 !important;}');}
