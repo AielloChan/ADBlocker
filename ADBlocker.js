@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ADBlocker
 // @namespace    http://aiellochan.com/
-// @version      1.3
+// @version      1.4
 // @description  An ADBlocker for front-end engineer!
 // @author       Aiello Chan <Aiello.Chan@Gmail.com>
 // @match        *://*/*
@@ -46,6 +46,14 @@ var Rules = {
       '#toolsIntro',
       '.wrapper.mt10',
       '#container.container'
+    ]
+  }],
+  "www.w3school.com.cn": [{
+    test: /.*/,
+    selectors: [
+      '#ad_head',
+      '#sidebar>div#ad',
+      '.adsbygoogle'
     ]
   }]
 };
