@@ -32,9 +32,6 @@ var Rules = {
   }]
 };
 
-var addStyle = function (b){var a=document.createElement("style"),c=document;c.getElementsByTagName("head")[0].appendChild(a);if(a.styleSheet){a.styleSheet.cssText=b;}else{a.appendChild(c.createTextNode(b));}};
-var Hide = function(a){addStyle(a.join(',')+'{display:none !important;}');};
-
 (function () {
   'use strict';
   var URL = window.location.href,
@@ -50,3 +47,6 @@ var Hide = function(a){addStyle(a.join(',')+'{display:none !important;}');};
     });
   }
 })();
+
+function addStyle(b){var a=document.createElement("style"),c=document;c.getElementsByTagName("head")[0].appendChild(a);if(a.styleSheet){a.styleSheet.cssText=b;}else{a.appendChild(c.createTextNode(b));}}
+function Hide(a){addStyle(a.join(',')+'{display:none !important;}');}
