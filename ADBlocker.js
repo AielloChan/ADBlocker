@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ADBlocker
 // @namespace    http://aiellochan.com/
-// @version      1.5.1520745173562
+// @version      1.5.1520749561837
 // @description  An ADBlocker for front-end engineer!
 // @author       Aiello Chan <Aiello.Chan@Gmail.com>
 // @match        *://*/*
@@ -31,7 +31,7 @@
     "jb51.net": [{
       subHostTest: 'www',
       processers: [{
-        pathTest: /article\//,
+        pathTest: /(?:article|css)\//,
         selectors: [
           '.logom.fl',
           '.logor.fr',
