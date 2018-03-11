@@ -9,8 +9,6 @@
 // @grant        none
 // ==/UserScript==
 
-
-
 (function () {
   'use strict';
 
@@ -109,6 +107,16 @@
         selectors: [
           '.corner-p',
           '.pause-p'
+        ]
+      }]
+    }],
+    "cnblogs.com": [{
+      subHostTest: 'www',
+      processers: [{
+        pathTest: /.*?\/p\//,
+        selectors: [
+          '#cnblogs_c1',
+          '#cnblogs_c2'
         ]
       }]
     }]
