@@ -147,7 +147,7 @@
       return true;
     });
   }
-  function match(a,b){return"string"==typeof a?"*"===a?!0:a==b:a instanceof RegExp?a.test(b):!1}
+  function match(a,b){return"string"==typeof a?"*"===a?!0:a==b:a instanceof RegExp?a.test(b):!1;}
   function addStyle(b){var a=document.createElement("style"),c=document;c.getElementsByTagName("head")[0].appendChild(a);if(a.styleSheet){a.styleSheet.cssText=b;}else{a.appendChild(c.createTextNode(b));}}
   function hide(a){addStyle(a.join(',')+'{display:none !important;visibility: hidden !important;width:0 !important;height:0 !important;margin:0 !important;padding:0 !important;line-height:0 !important;border:0 !important;z-index:-999 !important;}');}
   function getMainHost(){var o="mh_"+Math.random(),e=new RegExp("(^|;)\\s*"+o+"=12345"),t=new Date(0),n=document.domain,i=n.split("."),c=[];for(c.unshift(i.pop());i.length;){c.unshift(i.pop());var s=c.join("."),u=o+"=12345;domain=."+s;if(document.cookie=u,e.test(document.cookie))return document.cookie=u+";expires="+t,s;}}
