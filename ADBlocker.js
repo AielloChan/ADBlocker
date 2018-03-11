@@ -81,6 +81,18 @@
           '#content_left>div:not(.result) *'
         ]
       }]
+    },{
+      subHostTest: 'zhidao',
+      processers: [{
+        pathTest: /question\//,
+        selectors: [
+          '.widget-new-graphic',
+          '#union-asplu',
+          '#union-asplu + div + div',
+          '.cms-slide.cms-slide-lazy.mod-noshadow',
+          '.line.qb-section + div'
+        ]
+      }]
     }],
     "ygdy8.com": [{
       subHostTest: '*',
