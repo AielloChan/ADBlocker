@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ADBlocker
 // @namespace    http://aiellochan.com/
-// @version      1.5.1520749561837
+// @version      1.5.1520749757936
 // @description  An ADBlocker for front-end engineer!
 // @author       Aiello Chan <Aiello.Chan@Gmail.com>
 // @match        *://*/*
@@ -37,10 +37,12 @@
           '.logor.fr',
           '.main.mb10.clearfix',
           '.lbd.clearfix',
+          '.r300.clearfix',
           '.r300.clearfix.mt10',
           '.r300.clearfix.mt10.mb10',
           '.rFixedBox',
-          '#wrapper'
+          '#wrapper',
+          '#con_all'
         ]
       }]
     }],
