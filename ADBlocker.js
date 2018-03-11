@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ADBlocker
 // @namespace    http://aiellochan.com/
-// @version      1.5.1520749757936
+// @version      1.5.1520758949881
 // @description  An ADBlocker for front-end engineer!
 // @author       Aiello Chan <Aiello.Chan@Gmail.com>
 // @match        *://*/*
@@ -138,9 +138,9 @@
 
   const URL = location.href,
     HOST = location.host,
-    MAIN_HOST = getMainHost(),
-    SUB_HOST = HOST.substr(0, HOST.length - MAIN_HOST.length - 1),
-    PATH = location.pathname.substr(1);
+    PATH = location.pathname.substr(1),
+    MAIN_HOST = /(?:\d+\.){3}\d+/.test(HOST) ? HOST : getMainHost(),
+    SUB_HOST = HOST.substr(0, HOST.length - MAIN_HOST.length - 1);
 
   const mainHostRules = Rules[MAIN_HOST];
   if (mainHostRules) {
